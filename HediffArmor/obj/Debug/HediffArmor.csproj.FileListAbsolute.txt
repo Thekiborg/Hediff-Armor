@@ -1,7 +1,0 @@
-D:\Steam\steamapps\common\RimWorld\Mods\HediffArmor\Assemblies\Thek.HediffArmor.dll
-D:\Steam\steamapps\common\RimWorld\Mods\HediffArmor\obj\Debug\HediffArmor.csproj.AssemblyReference.cache
-D:\Steam\steamapps\common\RimWorld\Mods\HediffArmor\obj\Debug\HediffArmor.GeneratedMSBuildEditorConfig.editorconfig
-D:\Steam\steamapps\common\RimWorld\Mods\HediffArmor\obj\Debug\HediffArmor.AssemblyInfoInputs.cache
-D:\Steam\steamapps\common\RimWorld\Mods\HediffArmor\obj\Debug\HediffArmor.AssemblyInfo.cs
-D:\Steam\steamapps\common\RimWorld\Mods\HediffArmor\obj\Debug\HediffArmor.csproj.CoreCompileInputs.cache
-D:\Steam\steamapps\common\RimWorld\Mods\HediffArmor\obj\Debug\Thek.HediffArmor.dll
