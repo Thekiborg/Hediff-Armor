@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <HediffDef Abstract="True" ParentName="InfectionBase" Name="HediffArmorBase">
+        <hediffClass>HediffWithComps</hediffClass>
+        <makesSickThought>true</makesSickThought>
+        <makesAlert>false</makesAlert>
+        <minSeverity>0.001</minSeverity>
+        <maxSeverity>1</maxSeverity>
+        <initialSeverity>0.280</initialSeverity>
+        <tendable>true</tendable>
+        <comps>
+          <li Class="HediffCompProperties_Disappears">
+            <disappearsAfterTicks>1800000</disappearsAfterTicks>
+          </li>
+          <li Class="HediffCompProperties_TendDuration">
+            <baseTendDurationHours>48</baseTendDurationHours>
+            <severityPerDayTended>-1.0</severityPerDayTended>
+          </li>
+          <li Class="HediffCompProperties_Immunizable">
+            <severityPerDayNotImmune>0.25</severityPerDayNotImmune>
+          </li>
+          <li Class="Thek.HediffArmor.HediffCompProperties_ArmorBehavior">
+            <armorSettings>
+              <li>
+                <ApparelForced>
+                  <li>Apparel_PowerArmor</li>
+                  <li>Apparel_PowerArmorHelmet</li>
+                </ApparelForced>
+                <WeaponForced>
+                  <li>Gun_ChargeRifle</li>
+                </WeaponForced>
+                <SeverityToForce>0.3</SeverityToForce>
+              </li>
+            </armorSettings>
+          </li>
+        </comps>
+      </HediffDef>
+
+    <HediffDef ParentName="HediffArmorBase">
+        <defName>HediffArmor</defName>
+        <label>todo</label>
+        <description>todo</description>
+        <stages>
+            <li>
+                <label>minor</label>  <!-- Menor -->
+                <painOffset>0.2</painOffset>
+                <capMods>
+                  <li>
+                    <capacity>Consciousness</capacity>
+                    <offset>-0.05</offset>
+                  </li>
+                  <li>
+                    <capacity>Manipulation</capacity>
+                    <offset>-0.05</offset>
+                  </li>
+                </capMods>
+              </li>
+              <li>
+                <minSeverity>0.3</minSeverity>
+                <label>should have armor</label> <!-- Mayor -->
+                <painOffset>0.35</painOffset>
+                <capMods>
+                  <li>
+                    <capacity>Consciousness</capacity>
+                    <offset>-0.2</offset>
+                  </li>
+                  <li>
+                    <capacity>Manipulation</capacity>
+                    <offset>-0.2</offset>
+                  </li>
+                </capMods>
+              </li>
+              <li>
+                <minSeverity>0.8</minSeverity>
+                <label>extreme</label> <!-- Extremo -->
+                <painOffset>0.6</painOffset>
+                <capMods>
+                  <li>
+                    <capacity>Consciousness</capacity>
+                    <offset>-0.3</offset>
+                  </li>
+                  <li>
+                    <capacity>Manipulation</capacity>
+                    <offset>-0.3</offset>
+                  </li>
+                </capMods>
+              </li>
+              <li>
+                <minSeverity>0.9</minSeverity>
+                <label>extreme</label> <!-- Extremo 2 -->
+                <lifeThreatening>true</lifeThreatening>
+                <painOffset>0.85</painOffset>
+                <capMods>
+                  <li>
+                    <capacity>Consciousness</capacity>
+                    <offset>-0.3</offset>
+                  </li>
+                  <li>
+                    <capacity>Manipulation</capacity>
+                    <offset>-0.3</offset>
+                  </li>
+                  <li>
+                    <capacity>Breathing</capacity>
+                    <offset>-0.15</offset>
+                  </li>
+                </capMods>
+              </li>
+        </stages>
+      </HediffDef>
+    
+</Defs>
